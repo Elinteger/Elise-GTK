@@ -2,14 +2,7 @@
 
 > An edit of the Dracula dark theme for [GTK](https://www.gtk.org/).
 
-## Before
-(insert image here)
-
-## After
-(insert image here aswell)
-
-*anything below this line is the (slightly edited) original README.md*:
-
+![Screenshot](./screenshot.png)
 ---
 
 This theme provides support for GTK-3 and GTK-2 based desktop environments like Gnome, Unity, Budgie, Pantheon, XFCE, Mate, etc. Also provides support for KDE plasma.
