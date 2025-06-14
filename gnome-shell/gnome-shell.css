@@ -4,46 +4,46 @@
 /* GLOBALS */
 stage {
   font-size: 11pt;
-  color: #C3C7D1; }
+  color: #d1c3c3; } /*ELISE: ? not seen anywhere */
 
 /* WIDGETS */
 /* Buttons */
 .button, .icon-button, .modal-dialog .modal-dialog-button-box .modal-dialog-button, .app-folder-dialog .edit-folder-button, .quick-settings-system-item .icon-button, .screenshot-ui-type-button, .screenshot-ui-show-pointer-button {
-  color: #C3C7D1;
-  background-color: #2c2f3c;
+  color: #d1c3c3; /*ELISE: Textcolor inside some shell buttons (like Calendar) */
+  background-color: #3c2c2d;  /*ELISE: Shell Menu (Top Right) Buttons Background Big Part*/
   box-shadow: none;
-  border: 1px solid #1b1c24; }
+  border: 1px solid #241b1b; } /*ELISE: Border around buttons like brightness in Shell Menus (Top Right, Calendar...)*/ 
   .button:focus, .icon-button:focus, .modal-dialog .modal-dialog-button-box .modal-dialog-button:focus, .app-folder-dialog .edit-folder-button:focus, .quick-settings-system-item .icon-button:focus, .screenshot-ui-type-button:focus, .screenshot-ui-show-pointer-button:focus {
-    background-color: #353848;
-    color: #f8f8f2;
+    background-color: #483535; /*ELISE: ? not seen anywhere */
+    color: #f8f2f2; /*ELISE: ? not seen anywhere */
     box-shadow: none !important;
-    border: 1px solid #1b1c24; }
+    border: 1px solid #1b1c24; } /*ELISE: ? not seen anywhere */
   .button:insensitive, .icon-button:insensitive, .modal-dialog .modal-dialog-button-box .modal-dialog-button:insensitive, .app-folder-dialog .edit-folder-button:insensitive, .quick-settings-system-item .icon-button:insensitive, .screenshot-ui-type-button:insensitive, .screenshot-ui-show-pointer-button:insensitive {
-    color: #767984;
-    background-color: rgba(57, 59, 71, 0.66);
+    color: #767984; /*ELISE: Text of not available buttons (ie window in video screenshot mode */
+    background-color: rgba(71, 57, 57, 0.66); /*ELISE: Not available buttons (ie window in video screenshot mode */
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
     border: none;
     text-shadow: none;
     icon-shadow: none; }
   .button:active, .button:checked, .icon-button:active, .icon-button:checked, .modal-dialog .modal-dialog-button-box .modal-dialog-button:active, .app-folder-dialog .edit-folder-button:active, .quick-settings-system-item .icon-button:active, .screenshot-ui-type-button:active, .screenshot-ui-show-pointer-button:active, .modal-dialog .modal-dialog-button-box .modal-dialog-button:checked, .app-folder-dialog .edit-folder-button:checked, .quick-settings-system-item .icon-button:checked, .screenshot-ui-type-button:checked, .screenshot-ui-show-pointer-button:checked {
-    color: #f8f8f2;
-    background-color: rgba(189, 147, 249, 0.5);
-    border: 1px solid #1b1c24;
+    color: #f8f8f2; /*ELISE: Text in currently selected buttons (ie mode in screenshot) */
+    background-color: rgba(189, 147, 249, 0.5); /*ELISE: currently selected buttons (ie mode in screenshot) */
+    border: 1px solid #1b1c24; /*ELISE: Border of currently selected buttons (ie mode in screenshot) */
     text-shadow: none;
     icon-shadow: none; }
   .button:hover, .icon-button:hover, .modal-dialog .modal-dialog-button-box .modal-dialog-button:hover, .app-folder-dialog .edit-folder-button:hover, .quick-settings-system-item .icon-button:hover, .screenshot-ui-type-button:hover, .screenshot-ui-show-pointer-button:hover {
-    background-color: #353848;
-    color: #f8f8f2;
-    border: 1px solid #1b1c24; }
+    background-color: #353848; /*ELISE: effect of button when hovered over (ie in menu up right) */
+    color: #f8f2f2; /*ELISE: effect of text in buttons when hovered over (ie in menu up right) */
+    border: 1px solid #1b1c24; } /*ELISE: effect of border of buttons when hovered over (ie in menu up right) */
 
 .button {
   border-radius: 5px;
   padding: 4px 32px; }
 
-.modal-dialog-linked-button {
+.modal-dialog-linked-button { /*ELISE: Modal Buttons are buttons like 'Logout', 'Restart'... - can't find those */
   padding: 10px;
   color: #C3C7D1;
-  background-color: #2c2f3c;
+  background-color: #3c2c2c;
   box-shadow: none;
   border: 1px solid #1b1c24; }
   .modal-dialog-linked-button:insensitive {
@@ -81,12 +81,12 @@ stage {
     border-radius: 0px 0px 10px 10px; }
 
 /* Entries */
-StEntry {
-  background-color: #333545;
+StEntry { /*ELISE: can be used for text not found in gnome so far though */
+  background-color: #453333;
   border-color: #1b1c24;
   border-radius: 6px;
   padding: 4px;
-  color: #C3C7D1;
+  color: #d1c3c3;
   border-width: 1px;
   selection-background-color: rgba(189, 147, 249, 0.5);
   selected-color: #f8f8f2; }
@@ -111,7 +111,7 @@ StScrollView.vfade {
 StScrollView.hfade {
   -st-hfade-offset: 68px; }
 
-StScrollBar {
+StScrollBar { /*ELISE:scrollbar, not found yet though */
   padding: 0; }
   StScrollView StScrollBar {
     min-width: 14px;
@@ -124,20 +124,20 @@ StScrollBar {
     background-color: #474955;
     margin: 3px; }
     StScrollBar StButton#vhandle:hover, StScrollBar StButton#hhandle:hover {
-      background-color: #a4a8b2; }
+      background-color: #b2a4a4; }
     StScrollBar StButton#vhandle:active, StScrollBar StButton#hhandle:active {
       background-color: rgba(189, 147, 249, 0.5); }
 
 /* Slider */
-.slider {
-  color: #C3C7D1;
+.slider { /*ELISE: Slider colors for slider in top right menu for example */
+  color: #d1c3c3;/*ELISE: Slider head */
   -barlevel-height: 3px;
-  -barlevel-background-color: rgba(195, 199, 209, 0.4);
+  -barlevel-background-color: rgba(195, 199, 209, 0.4); /*ELISE: Slider inactive "active part" */
   -barlevel-border-width: 2px;
   -barlevel-border-color: transparent;
-  -barlevel-active-background-color: #bd93f9;
+  -barlevel-active-background-color: #bd93f9; /*ELISE: Slider "active part" */
   -barlevel-active-border-color: transparent;
-  -barlevel-overdrive-color: #9b1b32;
+  -barlevel-overdrive-color: #9b1b32; /*ELISE: ? not seen anywhere */
   -barlevel-overdrive-border-color: transparent;
   -barlevel-overdrive-separator-width: 0px;
   -slider-handle-radius: 8px;
@@ -182,7 +182,7 @@ StScrollBar {
     background-image: url("assets/toggle-on.svg"); }
 
 /* links */
-.shell-link {
+.shell-link { /*ELISE: not entirely sure, but probably hyperlinks in gnome */
   color: #A0C1B9; }
   .shell-link:hover {
     color: #bfd5d0; }
@@ -197,7 +197,7 @@ StScrollBar {
 .flashspot {
   background-color: white; }
 
-.modal-dialog {
+.modal-dialog { /* ELISE: dialoge that open temporarly about main window and requires user attention before normal work can continue */
   border: 1px solid #1b1c24;
   border-radius: 10px;
   color: #C3C7D1;
@@ -479,7 +479,7 @@ StScrollBar {
   spacing-rows: 15px;
   spacing-columns: 1em; }
 
-/* Popovers/Menus */
+/* Popovers/Menus */ /*ELISE: self explanatory, not seen yet though */
 .popup-menu {
   min-width: 15em;
   background-color: transparent;
@@ -505,7 +505,7 @@ StScrollBar {
 
 .popup-menu-content {
   padding: 6px;
-  background: #21232d;
+  background: #21232d; /* ELISE: menu on top right, background */
   border-radius: 12px;
   border: 1px solid #1b1c24; }
 
@@ -567,7 +567,7 @@ StScrollBar {
   -boxpointer-gap: 4px;
   -arrow-rise: 0px; }
 
-/* fallback menu
+/* ELISE: fallback menu
 - odd thing for styling App menu when apparently not running under shell. Light Adwaita styled
   app menu inside the main app window itself rather than the top bar
 */
@@ -708,9 +708,10 @@ StScrollBar {
   border-radius: 2px 2px 0 0; }
 
 /* TOP BAR */
+/*ELISE: Top bar doesn't matter as its translucent anyways */
 #panel {
   background-gradient-direction: none;
-  background-color: rgba(33, 35, 45, 0.95);
+background-color: rgba(33, 35, 45, 0.95);
   /* transition from solid to transparent */
   transition-duration: 500ms;
   font-weight: bold;
@@ -792,10 +793,11 @@ StScrollBar {
   box-shadow: none; }
 
 .world-clocks-button, .weather-button, .events-button {
-  background: #262834;
+  /*ELISE: Calendar in Topbar*/
+  background: #262834; /*ELISE: background of stuff like the "Today.., World Clock.. fields */
   border-radius: 7px;
   box-shadow: 0px 0px 1px 1px #1b1c24 inset;
-  color: #C3C7D1; }
+  color: #C3C7D1; } /*ELISE: text of stuff like the "Today.., World Clock.. fields */
 
 .datemenu-calendar-column {
   border: none; }
@@ -804,7 +806,7 @@ StScrollBar {
 .events-section-title,
 .message-list-section-title {
   border-radius: 4px;
-  color: #C3C7D1;
+  color: #d1c3c3; /*ELISE: Text on top of calendar widget in topbar "Saturday, 14th June 2025 */
   padding: .4em; }
 
 .datemenu-today-button:hover, .datemenu-today-button:focus,
@@ -826,7 +828,7 @@ StScrollBar {
 .message-list-section-title:active,
 .events-button:active {
   color: white;
-  background-color: rgba(189, 147, 249, 0.5); }
+  background-color: rgba(189, 147, 249, 0.5); } /*ELISE: background when clicked of stuff like the "Today.., World Clock.. fields */
 
 .datemenu-today-button .date-label {
   font-size: 1.5em; }
